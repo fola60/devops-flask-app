@@ -6,4 +6,4 @@ source .my_venv/bin/activate
 
 pip3 install flask
 
-flask --app hello run --host=0.0.0.0
+flask --app hello run --host=0.0.0.0 --port=8080
