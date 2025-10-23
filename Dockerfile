@@ -3,7 +3,7 @@ FROM python:3.13.9-alpine3.22
 WORKDIR /app
 COPY . .
 
-RUN pip install --no-cache-dir flask
+RUN pip install --no-cache-dir flask redis
 
 EXPOSE 5000
 
