@@ -1,1 +1,36 @@
-This version does not support the file-based config
+This version does not support the file-based configThis version does not support the file-based configTraceback (most recent call last):
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 73, in <module>
+    main('port-forward.config', 'error.log', sys.argv[1:])
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 30, in main
+    for settings in parse_args(args):
+                    ^^^^^^^^^^^^^^^^
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 44, in parse_args
+    settings.append((int(parts[0]), parts[1], int(parts[2])))
+                                                  ~~~~~^^^
+IndexError: list index out of range
+Exception ignored in thread started by: <function forward at 0x1005f0180>
+Traceback (most recent call last):
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 69, in forward
+    source.shutdown(socket.SHUT_RD)
+OSError: [Errno 57] Socket is not connected
+Exception ignored in thread started by: <function forward at 0x1005f0180>
+Traceback (most recent call last):
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 69, in forward
+    source.shutdown(socket.SHUT_RD)
+OSError: [Errno 57] Socket is not connected
+Exception ignored in thread started by: <function forward at 0x1005f0180>
+Traceback (most recent call last):
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 69, in forward
+    source.shutdown(socket.SHUT_RD)
+OSError: [Errno 57] Socket is not connected
+Exception ignored in thread started by: <function forward at 0x1005f0180>
+Traceback (most recent call last):
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 69, in forward
+    source.shutdown(socket.SHUT_RD)
+OSError: [Errno 57] Socket is not connected
+Traceback (most recent call last):
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 73, in <module>
+    main('port-forward.config', 'error.log', sys.argv[1:])
+  File "/Users/afolabiadekanle/repos/school/devops-flask-app/port-forward.py", line 38, in main
+    time.sleep(60)
+KeyboardInterrupt

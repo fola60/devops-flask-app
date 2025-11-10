@@ -15,4 +15,6 @@ spec:
       containers:
         - name: flaskapp-container
           image: my_flask_image
-          imagePullPolicy: Never
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000
